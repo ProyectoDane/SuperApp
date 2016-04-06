@@ -1,2 +1,3 @@
 # Super App
-Proyecto principal SuperApp/ el resto son proyectos librerias importables desde Eclipse.
+El Proyecto principal esta en SuperApp/ 
+El resto de las carpetas son proyectos librerias importables desde Eclipse.
