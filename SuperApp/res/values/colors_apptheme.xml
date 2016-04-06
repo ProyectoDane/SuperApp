@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>     
+    <color name="apptheme_color">#61bbe8</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+     <color name="colorPrimary">#ffe91e63</color>
+    <color name="colorPrimaryDark">#ffc2185b</color>
+</resources>

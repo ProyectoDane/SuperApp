@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61bbe8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#33000000"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/backarrow" />
+
+        <ar.uba.fi.superapp.custom.FrancoisTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/primary_text_dark" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/helpCotainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/feed_item_margin" >
+
+            <TextView
+                android:layout_marginTop="@dimen/feed_item_margin_vertical"
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juego del Super"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En este juego deberás poner dentro del carrito de supermercado los elementos que figuran en la lista de compras."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/supper" />
+
+            <TextView
+                android:layout_marginTop="@dimen/feed_item_margin_vertical"
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juego de las palabras"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En este juego deberás escribir letra por letra la palabra que se ve en la pantalla. Ten en cuenta que el orden no importa."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/guess" />
+
+            <TextView
+                android:layout_marginTop="@dimen/feed_item_margin_vertical"
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar de Nivel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En ambos juegos puedes moverte dentro de los niveles ya jugados. Para esto debes tocar donde dice NIVEL # en el título del nivel actual y elegir otro nivel."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cambiarnivel" />
+
+            <TextView
+                android:layout_marginTop="@dimen/feed_item_margin_vertical"
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista del Super"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La lista del super sirve para que puedas poner en el carrito cosas que necesites comprar y luego ir a la tienda y marcar cada item a medida que lo hayas encontrado y puesto en tu carrito de verdad. Ademas de los items precargados puedes agregar nuevos o editarlos."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/armarlista" />
+
+            <TextView
+                android:layout_marginTop="@dimen/feed_item_margin_vertical"
+                android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para editar los items, debes ingresar al menu de edición tocando el nombre de la sección en la parte superior de la pantalla."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/editaritem" />
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0" />
+
+</LinearLayout>

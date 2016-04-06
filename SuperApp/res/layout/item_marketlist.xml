@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:context="ar.uba.fi.superapp.SuperMarketListActivity" >
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/feed_item_margin_vertical"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin_vertical"
+        android:layout_weight="0"
+        android:background="@drawable/bg_parent_rounded_corner_selector"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="#00ffffff"
+            android:padding="5dp"
+            android:src="@drawable/delete_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/feed_item_padding_top_bottom"
+            android:layout_marginLeft="@dimen/feed_item_padding_left_right"
+            android:layout_marginRight="@dimen/feed_item_padding_left_right"
+            android:layout_marginTop="@dimen/feed_item_padding_top_bottom"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0" >
+
+                <ImageView
+                    android:id="@+id/imageItem"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/bg_rounded_corner_image"
+                    android:padding="5dp"
+                    android:src="@drawable/placeholder" />
+
+                <ImageView
+                    android:id="@+id/checkImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_buyed" />
+            </RelativeLayout>
+
+            <ar.uba.fi.superapp.custom.FrancoisTextView
+                android:id="@+id/titulo_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="Item"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
