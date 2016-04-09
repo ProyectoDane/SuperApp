@@ -128,7 +128,7 @@ public class AddEditItemActivity extends Activity {
 		InputFilter filter = new InputFilter() { 
 		     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) { 
 		          for (int i = start; i < end; i++) { 
-		              if (!Character.isLetterOrDigit(source.charAt(i)) || !Character.isWhitespace(source.charAt(i))) { 
+		              if (!Character.isLetterOrDigit(source.charAt(i)) && !Character.isWhitespace(source.charAt(i))) { 
 		                  return ""; 
 		                  } 
 		           } 
